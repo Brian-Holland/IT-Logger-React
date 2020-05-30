@@ -1,11 +1,11 @@
 {
   "logs": [
     {
-      "message": "Station 042 down",
+      "id": 1,
+      "message": "Station 042 fixed",
       "attention": true,
-      "tech": "Sam Smith",
-      "date": "2020-05-29T21:19:02.658Z",
-      "id": 1
+      "tech": "John Doe",
+      "date": "2020-05-30T05:13:29.263Z"
     },
     {
       "message": "Replaced power supply at station 068",
