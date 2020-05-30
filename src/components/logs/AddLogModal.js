@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { connect } from "react-redux";
 import PropTypes from "prop-types";
 import { addLog } from "../../actions/logActions";
+import TechSelectOptions from "../techs/TechSelectOptions";
 import M from "materialize-css/dist/js/materialize.min.js";
 
 const AddLogModal = ({ addLog }) => {
@@ -11,7 +12,7 @@ const AddLogModal = ({ addLog }) => {
 
     const onSubmit = () => {
         if (message === "" || tech === "") {
-            M.toast({ html: "Please enter a message and tchnician" });
+            M.toast({ html: "Please enter a message and technician" });
         }
         const newLog = {
             message,
@@ -57,9 +58,7 @@ const AddLogModal = ({ addLog }) => {
                             <option value="" disabled>
                                 Select Technician
                             </option>
-                            <option value="John Doe">John</option>
-                            <option value="Sara Wilson">Sara</option>
-                            <option value="Sam Smith">Sam</option>
+                            <TechSelectOptions />
                         </select>
                     </div>
                 </div>
